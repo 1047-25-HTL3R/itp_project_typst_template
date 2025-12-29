@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HTL Rennweg Diplomarbeitsvorlage
 
 > [!IMPORTANT]
@@ -65,3 +66,7 @@ Files in the directory `src/lib/assets/htl3r-citestyle` are licensed under [CC B
 as compatible with the original work licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
 Other files in this project are licensed under [0BSD](https://opensource.org/license/0bsd).
+=======
+# itp_project_typst_template
+HTL Rennweg Typst ITP Projekt Vorlage
+>>>>>>> 57ba7b3541f87e0ed41109bca3d8f7181c11b41c
