@@ -7,3 +7,6 @@ template/main.pdf
 
 # Remove this when test finally work
 tests/**/out
+
+*.pdf
+.typst-cache/
