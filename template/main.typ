@@ -1,4 +1,4 @@
-#import "../src/lib.typ" as htl3r
+#import "@preview/htl3r-da:2.0.0" as htl3r
 
 
 #show: htl3r.diplomarbeit.with(
