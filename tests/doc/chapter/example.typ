@@ -1,6 +1,9 @@
-#import "@preview/htl3r-da:0.1.0" as htl3r
+#import "@local/htl3r-itp:0.1.0" as itp
 
-#htl3r.author("Julian Burger")
+#bibliography("../refs.yml")
+
+
+#itp.author("Julian Burger")
 = Einführung Typst
 Typst ist ein Markup-basierter Schriftsatz, welcher entwickelt wurde, um genau so mächtig wie LaTeX zu sein, während er gleichzeitig simpel und einfach zu benutzen ist. Bei Unklarheiten ist die Dokumentation unter https://typst.app/docs/ zu finden. Falls allgemeine Fragen zur Umsetzung gewisser Konzepte aufkommen, so ist entweder das Forum (https://forum.typst.app/) oder der Discord-Server (https://discord.gg/2uDybryKPe) aufzusuchen.
 
@@ -15,14 +18,14 @@ Typst hat eine CLI, über welche die Quellcodedateien zu PDF kompiliert werden. 
 typst compile $DATEI
 ```
 
-#htl3r.author("Viktor Kreuzer")
+#itp.author("Viktor Kreuzer")
 = Grundlagen
 
 Der Autor des Kapitels muss explizit angegeben werden!
 
-#htl3r.code()[
+#itp.code()[
   ```typ
-  #htl3r.author("Max Mustermann")
+  #itp.author("Max Mustermann")
   ```
 ]
 
@@ -31,7 +34,7 @@ Damit die Abbildungen mit richtigem Spacing auf der Seite angezeigt werden, müs
 
 Damit kann die Breite der Figure angepasst werden.
 
-#htl3r.code()[
+#itp.code()[
   ```typ
   #htl3r.fspace(
     total-width: 50%,
@@ -42,7 +45,7 @@ Damit kann die Breite der Figure angepasst werden.
 
 resultiert in:
 
-#htl3r.fspace(
+#itp.fspace(
   total-width: 50%,
   figure(image("../assets/16x9.png"), caption: [Bild mit 16:9]),
 )
@@ -50,7 +53,7 @@ resultiert in:
 #pagebreak()
 Mit der `fspace`-Funktion können auch mehrere Figures nebeneinander gestellt werden.
 
-#htl3r.code()[
+#itp.code()[
   ```typ
   #htl3r.fspace(
     figure(image("../assets/16x9.png"), caption: [Bild mit 16:9]),
@@ -61,7 +64,7 @@ Mit der `fspace`-Funktion können auch mehrere Figures nebeneinander gestellt we
 
 resultiert in:
 
-#htl3r.fspace(
+#itp.fspace(
   figure(image("../assets/16x9.png"), caption: [Bild mit 16:9]),
   figure(image("../assets/1x1.png"), caption: [Bild mit 1:1]),
 )
@@ -69,9 +72,9 @@ resultiert in:
 == Tabellen
 Tabellen müssen auch mit der `fspace`-Funktion gewrappt werden.
 
-#htl3r.code(caption: none, description: none, skips: ((3, 3),))[
+#itp.code(caption: none, description: none, skips: ((3, 3),))[
   ```typ
-  #htl3r.fspace(
+  #itp.fspace(
     total-width: 100%,
     figure(table(columns: 3,
     ), caption: [Beispieltabelle])
@@ -79,7 +82,7 @@ Tabellen müssen auch mit der `fspace`-Funktion gewrappt werden.
   ```
 ]
 
-#htl3r.fspace(
+#itp.fspace(
   total-width: 100%,
   figure(
     table(
@@ -95,11 +98,11 @@ Tabellen müssen auch mit der `fspace`-Funktion gewrappt werden.
 == Codeblöcke
 Für Codeblöcke gibt es eine eigene Funktion:
 
-#htl3r.code()[
+#itp.code()[
   #raw(
     block: true,
     lang: "typ",
-    "#htl3r.code(caption: [Advanced Bash Skript], description: [Beispielcode])[
+    "#itp.code(caption: [Advanced Bash Skript], description: [Beispielcode])[
 ```bash
 rm -rf /
 ```
@@ -108,7 +111,7 @@ rm -rf /
 ]
 
 Output:
-#htl3r.code(caption: [Advanced Bash Skript], description: [Beispielbefehl])[
+#itp.code(caption: [Advanced Bash Skript], description: [Beispielbefehl])[
   ```bash
   rm -rf /
   ```
@@ -117,25 +120,25 @@ Output:
 Codeblöcke können auch aus einer Datei gelesen werden:
 
 ```typ
-#htl3r.code-file(lang: "bash", text: read("../assets/code-example.sh"))
+#itp.code-file(lang: "bash", text: read("../assets/code-example.sh"))
 ```
 Output:
-#htl3r.code-file(lang: "bash", text: read("../assets/code-example.sh"))
+#itp.code-file(lang: "bash", text: read("../assets/code-example.sh"))
 
 #pagebreak()
 == Abkürzungen
 Die verwendeten Abkürzungen werden zentral in einer YAML-Datei definiert. \
 Mithilfe dieser YAML-Datei werden Abkürzungsverzeichnis und Glossar generiert.
 
-#htl3r.code(description: [Datei "abbr.yml"])[
+#itp.code(description: [Datei "abbr.yml"])[
   ```yaml
   da: # <- Das ist der Key für die Abkürzung
     short:
-      singular: DA
-      plural: DA
+      singular: ITP-Projekt
+      plural: ITP-Projekte
     long:
-      singular: Diplomarbeit
-      plural: Diplomarbeiten
+      singular: ITP-Projekt
+      plural: ITP-Projekte
     description: Abschlussarbeit an einer HTL # Beschreibung für das Glossar
 
   cisco:
@@ -147,16 +150,16 @@ Mithilfe dieser YAML-Datei werden Abkürzungsverzeichnis und Glossar generiert.
 Diese Abkürzungen können im Dokument verwendet werden.
 
 ```typ
-#htl3r.short[da] - // Kurzform Singular
-#htl3r.shortpl[da] - // Kurzform Plural
-#htl3r.long[da] - // Langform Singular
-#htl3r.longpl[da] // Langform Plural
+#itp.short[da] - // Kurzform Singular
+#itp.shortpl[da] - // Kurzform Plural
+#itp.long[da] - // Langform Singular
+#itp.longpl[da] // Langform Plural
 ```
 
-#htl3r.short[da] -
-#htl3r.shortpl[da] -
-#htl3r.long[da] -
-#htl3r.longpl[da]
+#itp.short[da] -
+#itp.shortpl[da] -
+#itp.long[da] -
+#itp.longpl[da]
 
 #pagebreak()
 == Zitation
@@ -166,7 +169,7 @@ Die Referenzdatei kann entweder in einer BibLaTeX `.bib` Datei oder im
   fill: blue,
 )
 erfolgen.
-#htl3r.code(description: [Datei "refs.yml" (Hayagriva-Format)])[
+#itp.code(description: [Datei "refs.yml" (Hayagriva-Format)])[
   ```yaml
   htl3r-website: # <- Reference-Key
     author: HTL Rennweg

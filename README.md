@@ -1,10 +1,11 @@
 <<<<<<< HEAD
-# HTL Rennweg Diplomarbeitsvorlage
+
+# HTL Rennweg ITP-Projekt Dokumentenvorlage
 
 > [!IMPORTANT]
 > If you are not a student of HTL Rennweg, this template will be of little use to you.
 
-Dieses Template dient als Vorlage für ein Diplomarbeitsbuch an der HTL Rennweg und orientiert
+Dieses Template dient als Vorlage für ein Dokument eines ITP-Projekts an der HTL Rennweg und orientiert
 sich an der Word-Vorlage mit dem Stand 2024/25. Es gibt jedoch Abweichungen, für welche sich
 absichtlich entschieden wurde. Dies beinhalten vor allem die Schriftarten. Es wird versucht,
 ein einheitliches Gesamtbild zu schaffen.
@@ -14,9 +15,9 @@ ein einheitliches Gesamtbild zu schaffen.
 To adhere to the official style of the book, all template options should be set according to the following template.
 
 ```typ
-#import "@preview/htl3r-da:2.0.0" as htl3r
+#import "@local/htl3r-itp:0.1.0" as itp
 
-#show: htl3r.diplomarbeit.with(
+#show: itp.itp-project.with(
   title: "Mein DA-Titel",
   subtitle: "mit kreativem Untertitel",
   department: "ITN", // kann eine Auswahl sein aus: ITN, ITM, M
@@ -45,6 +46,7 @@ To adhere to the official style of the book, all template options should be set 
 ```
 
 ## Template functions
+
 For an overview of the functions see the [manual](docs/manual.pdf).
 
 ## Installation (for devs)
@@ -65,8 +67,10 @@ Now you are able to compile documents using the template system-wide.
 Files in the directory `src/lib/assets/htl3r-citestyle` are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 as compatible with the original work licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
-Other files in this project are licensed under [0BSD](https://opensource.org/license/0bsd).
-=======
+# Other files in this project are licensed under [0BSD](https://opensource.org/license/0bsd).
+
 # itp_project_typst_template
+
 HTL Rennweg Typst ITP Projekt Vorlage
->>>>>>> 57ba7b3541f87e0ed41109bca3d8f7181c11b41c
+
+> > > > > > > 57ba7b3541f87e0ed41109bca3d8f7181c11b41c

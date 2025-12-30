@@ -1,6 +1,6 @@
-#import "@preview/htl3r-da:2.0.0" as htl3r
+#import "@local/htl3r-itp:0.1.0" as itp
 
-#show: htl3r.diplomarbeit.with(
+#show: itp.itp-project.with(
   disable-cover: true,
   disable-book-binding: true,
   print-ref: false,

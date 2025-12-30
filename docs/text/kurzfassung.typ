@@ -1,3 +1,3 @@
-Hier steht eine kurze Zusammenfassung der Diplomarbeit.
+Hier steht eine kurze Zusammenfassung des Projekts.
 
 #lorem(100)

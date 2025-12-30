@@ -1,11 +1,11 @@
 da:
   short:
-    singular: DA
-    plural: DA
+    singular: ITP-Projekt
+    plural: ITP-Projekte
   long:
-    singular: Diplomarbeit
-    plural: Diplomarbeiten
-  description: Abschlussarbeit an einer HTL
+    singular: ITP-Projekt
+    plural: ITP-Projekte
+  description: ITP-Projekt an einer HTL
 
 cisco:
   long:

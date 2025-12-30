@@ -2,10 +2,10 @@
 #import "../util.typ": format-date, format-department
 
 #let create-page(
-  title: "Meine Diplomarbeit",
+  title: "Mein ITP-Projekt",
   subtitle: "Wir sind super toll!",
   department: "IT",
-  school-year: "2024/2025",
+  school-year: "2025/2026",
   authors: (
     (
       name: "Max Mustermann",
@@ -18,7 +18,7 @@
       role: "Stv. Projektleiter",
     ),
   ),
-  date: datetime(year: 2024, month: 12, day: 1),
+  date: datetime(year: 2025, month: 12, day: 1),
 ) = {
   // Header
   block(
@@ -65,7 +65,7 @@
       size: 24pt,
       font: settings.FONT_HEADING,
       weight: "bold",
-      "Diplomarbeit",
+      "ITP-Projekt",
     )
   ]
   v(1fr)

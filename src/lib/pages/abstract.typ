@@ -1,6 +1,6 @@
 #import "../util.typ": insert-blank-page
 
-#let create-page(
+`#let create-page(
   abstract-german,
   abstract-english,
 ) = [
@@ -9,4 +9,11 @@
   #insert-blank-page()
   = Abstract
   #abstract-english
+]`
+
+#let create-page(
+  abstract-german,
+) = [
+  = Kurzfassung
+  #abstract-german
 ]

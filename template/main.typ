@@ -1,23 +1,22 @@
-#import "@preview/htl3r-da:2.0.0" as htl3r
+#import "@local/htl3r-itp:0.1.0" as itp
 
 
-#show: htl3r.diplomarbeit.with(
-  title: "ASCEND",
+#show: itp.itp-project.with(
+  title: "Orpheus",
   subtitle: "Sicherheit auf jedem Level",
   department: "ITN", // kann eine Auswahl sein aus: ITN, ITM, M
   school-year: "2025/2026",
   authors: (
-    (name: "Eduard Smola", supervisor: "Richard Drechsler"),
-    (name: "Tamara Marl", supervisor: "Clemens Kussbach"),
-    (name: "Layan Al-Basha", supervisor: "Christian Schöndorfer"),
-    (name: "Julia Dam", supervisor: "Clemens Kussbach"),
-    (name: "Mohammad Danesh", supervisor: "Richard Drechsler"),
+    (name: "Eduard Smola", supervisor: "Georg Kasik"),
+    (name: "Tamara Marl", supervisor: "Georg Kasik"),
+    (name: "Layan Al-Basha", supervisor: "Georg Kasik"),
+    (name: "Julia Dam", supervisor: "Georg Kasik"),
+    (name: "Mohammad Danesh", supervisor: "Georg Kasik"),
   ),
   abstract-german: [#include "text/kurzfassung.typ"],
   abstract-english: [#include "text/abstract.typ"],
   supervisor-incl-ac-degree: (
-    "Dipl.-Ing. Christian Schöndorfer",
-    "Dipl.-Ing. Richard Drechsler",
+    "Dipl.-Ing. Georg Kasik",
     "Dipl.-Ing. Clemens Kussbach",
   ),
   sponsors: (

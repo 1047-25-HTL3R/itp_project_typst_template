@@ -1,8 +1,8 @@
 da:
   short:
-    singular: DA
-    plural: DA
+    singular: ITP-Projekt
+    plural: ITP-Projekte
   long:
-    singular: Diplomarbeit
-    plural: Diplomarbeiten
+    singular: ITP-Projekt
+    plural: ITP-Projekte
   description: Abschlussarbeit einer BHS
