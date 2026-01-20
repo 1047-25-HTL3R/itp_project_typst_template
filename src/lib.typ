@@ -263,7 +263,9 @@
     //pages.abstract.create-page(abstract-german, abstract-english)
     pages.abstract.create-page(abstract-german)
     //util.insert-blank-page()
-    pages.preamble.create-page(supervisor-incl-ac-degree, sponsors)
+
+    //pages.preamble.create-page(supervisor-incl-ac-degree, sponsors)
+
     //util.insert-blank-page()
     //pages.sworn-statement.create-page(authors, date, generative-ai-clause)
     //util.insert-blank-page()
@@ -309,7 +311,7 @@
     //util.insert-blank-page()
   }
   if print-ref {
-    pages.printref.create-page()
+    //pages.printref.create-page()
   } else if not disable-cover {
     //util.insert-blank-page()
   }
