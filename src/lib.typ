@@ -46,7 +46,7 @@
   bibliography-content: none,
   print-ref: true,
   disable-cover: false,
-  disable-book-binding: false,
+  disable-book-binding: true,
   body,
 ) = context {
   // validate fonts
@@ -269,7 +269,7 @@
     //util.insert-blank-page()
     //pages.sworn-statement.create-page(authors, date, generative-ai-clause)
     //util.insert-blank-page()
-    pages.create-tables()
+    //pages.create-tables()
     //util.insert-blank-page()
   }
   set page(
@@ -301,13 +301,13 @@
   //util.insert-blank-page()
   set heading(numbering: none)
   if abbreviation != none {
-    pages.abbreviation.create-page()
+    //pages.abbreviation.create-page()
     //util.insert-blank-page()
-    pages.glossary.create-page()
+    //pages.glossary.create-page()
     //util.insert-blank-page()
   }
   if bibliography-content != none {
-    pages.bibliography.create-page(bibliography: bibliography-content)
+    //pages.bibliography.create-page(bibliography: bibliography-content)
     //util.insert-blank-page()
   }
   if print-ref {

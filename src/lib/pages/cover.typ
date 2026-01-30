@@ -65,7 +65,7 @@
       size: 24pt,
       font: settings.FONT_HEADING,
       weight: "bold",
-      "ITP-Projekt",
+      "Diplomarbeit",
     )
   ]
   v(1fr)
